@@ -1,9 +1,12 @@
+/**
+ * ECHODUPE CORE DATA
+ */
 const EchoData = {
     // Versions for HUD
     versions: [
         { label: 'Shop Build', v: 'v2.0.0' },
         { label: 'Game Build', v: 'v1.2.1' },
-        { label: 'About Build', v: 'v1.0.6' }
+        { label: 'About Build', v: 'v1.0.7' }
     ],
 
     // Public Links & Info
@@ -41,16 +44,19 @@ document.body.appendChild(versionHUD);
 
 // 2. AUTO-FILL HTML & COPY FEATURE
 window.addEventListener('DOMContentLoaded', () => {
+    // Fill Links
     document.querySelectorAll('[data-link]').forEach(el => {
         const key = el.getAttribute('data-link');
         if (EchoData[key]) el.href = EchoData[key];
     });
 
+    // Fill Text
     document.querySelectorAll('[data-text]').forEach(el => {
         const key = el.getAttribute('data-text');
         if (EchoData[key]) el.innerText = EchoData[key];
     });
 
+    // Copy Logic
     const copyTarget = document.querySelector('[data-copy="serverIP"]');
     if (copyTarget) {
         copyTarget.addEventListener('click', () => {
