@@ -12,7 +12,7 @@ const EchoData = {
     // Public Links & Info
     discord: "https://discord.gg/aH2SyywD2x",
     serverIP: "play.echodupels.minehut.gg",
-    hub: "https://echodupe-hub.netlify.app",
+    hub: "echodupe.pages.dev",
     games: "https://echodupe.github.io/Games/",
     staff: "https://echodupe-hub.netlify.app/staff",
     rules: "https://echodupe-hub.netlify.app/rules"
