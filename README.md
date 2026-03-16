@@ -5,7 +5,7 @@
 
 <br>
 
-[![Network Status](https://img.shields.io/badge/Network-OPERATIONAL-06b6d4?style=for-the-badge)](https://echodupe.github.io/About/)
+[![Network Status](https://img.shields.io/badge/Network-OPERATIONAL-06b6d4?style=for-the-badge)](https://echodupe.github.io/Summary/)
 [![Lead Dev](https://img.shields.io/badge/Lead_Dev-SKITXOE-white?style=for-the-badge)](https://github.com/echodupe)
 
 ---
@@ -20,12 +20,14 @@ EchoDupe operates as a multi-node digital network. We specialize in industrial-n
 ---
 
 ### 🔗 ACTIVE CONNECTIONS
-[**INDUSTRIAL PORTAL**](https://echodupe-hub.netlify.app) • [**GAMES TERMINAL**](https://echodupe.github.io/Games/)
+[**INDUSTRIAL PORTAL**](https://echodupe-hub.netlify.app) • [**GAMES TERMINAL**](https://echodupe.github.io/Summary/)
 
 ---
 
 <br>
 
 <sub>Designed by **SKITXOE** | &copy; 2026 ECHODUPE INDUSTRIES</sub>
+
+**Version: [1.0.7]**
 
 </div>
