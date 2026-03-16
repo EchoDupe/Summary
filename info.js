@@ -6,16 +6,16 @@ const EchoData = {
     versions: [
         { label: 'Shop Build', v: 'v2.0.0' },
         { label: 'Game Build', v: 'v1.2.1' },
-        { label: 'About Build', v: 'v1.0.7' }
+        { label: 'About Build', v: 'v1.0.6' }
     ],
 
     // Public Links & Info
     discord: "https://discord.gg/aH2SyywD2x",
     serverIP: "play.echodupels.minehut.gg",
-    hub: "echodupe.pages.dev",
+    hub: "https://echodupe.pages.dev", // Updated to Cloudflare
     games: "https://echodupe.github.io/Games/",
-    staff: "https://echodupe-hub.netlify.app/staff",
-    rules: "https://echodupe-hub.netlify.app/rules"
+    staff: "https://echodupe.pages.dev/staff", // Updated to Cloudflare
+    rules: "https://echodupe.pages.dev/rules"  // Updated to Cloudflare
 };
 
 // 1. GENERATE VERSION HUD
@@ -44,19 +44,16 @@ document.body.appendChild(versionHUD);
 
 // 2. AUTO-FILL HTML & COPY FEATURE
 window.addEventListener('DOMContentLoaded', () => {
-    // Fill Links
     document.querySelectorAll('[data-link]').forEach(el => {
         const key = el.getAttribute('data-link');
         if (EchoData[key]) el.href = EchoData[key];
     });
 
-    // Fill Text
     document.querySelectorAll('[data-text]').forEach(el => {
         const key = el.getAttribute('data-text');
         if (EchoData[key]) el.innerText = EchoData[key];
     });
 
-    // Copy Logic
     const copyTarget = document.querySelector('[data-copy="serverIP"]');
     if (copyTarget) {
         copyTarget.addEventListener('click', () => {
